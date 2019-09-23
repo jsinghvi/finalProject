@@ -1,0 +1,82 @@
+2019-09-23 01:29:47.068  INFO 17794 --- [main] com.infy.fromJson.FromJsonApplication    : Starting FromJsonApplication on theWizard with PID 17794 (/home/kullu/Downloads/fromJson/target/classes started by kullu in /home/kullu/Downloads/fromJson)
+2019-09-23 01:29:47.079  INFO 17794 --- [main] com.infy.fromJson.FromJsonApplication    : No active profile set, falling back to default profiles: default
+2019-09-23 01:29:51.416  INFO 17794 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$a217d21a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-09-23 01:29:52.659  INFO 17794 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9001 (http)
+2019-09-23 01:29:52.740  INFO 17794 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-09-23 01:29:52.742  INFO 17794 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.24]
+2019-09-23 01:29:52.976  INFO 17794 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-09-23 01:29:52.976  INFO 17794 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 5729 ms
+2019-09-23 01:29:53.789  INFO 17794 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-09-23 01:29:54.703  INFO 17794 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9001 (http) with context path ''
+2019-09-23 01:29:54.710  INFO 17794 --- [main] com.infy.fromJson.FromJsonApplication    : Started FromJsonApplication in 11.015 seconds (JVM running for 14.943)
+2019-09-23 01:29:54.796  INFO 17794 --- [main] com.infy.fromJson.DAO.ProducerDataImpl   : Reading data from JSON
+2019-09-23 01:29:54.851  INFO 17794 --- [main] com.infy.fromJson.service.Publisher      : Sending data from Producer to Kafka
+2019-09-23 01:29:54.851  INFO 17794 --- [main] com.infy.fromJson.service.Publisher      : Message = 101,Sherlock,Holmes,21/B, Baker Street
+2019-09-23 01:29:54.944  INFO 17794 --- [main] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	bootstrap.servers = [localhost:9092]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	enable.idempotence = false
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 0
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = https
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2019-09-23 01:29:55.086  INFO 17794 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 2.0.1
+2019-09-23 01:29:55.087  INFO 17794 --- [main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : fa14705e51bd2ce5
+2019-09-23 01:29:56.069  INFO 17794 --- [kafka-producer-network-thread | producer-1] org.apache.kafka.clients.Metadata        : Cluster ID: SGgDbG-FRL6y5npyrXyxfg
+2019-09-23 01:32:23.032  INFO 17794 --- [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2019-09-23 01:32:23.057  INFO 17794 --- [RMI TCP Connection(11)-127.0.0.1] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-09-23 01:32:23.058  INFO 17794 --- [RMI TCP Connection(11)-127.0.0.1] o.a.k.clients.producer.KafkaProducer     : [Producer clientId=producer-1] Closing the Kafka producer with timeoutMillis = 30000 ms.
